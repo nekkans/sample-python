@@ -33,6 +33,9 @@ pipeline {
                     args '-v $PWD:/src --onefile sources/add2vals.py'
                 }
             }
+            steps {
+                sh 'echo "success"'
+            }
         }
     }
 }
