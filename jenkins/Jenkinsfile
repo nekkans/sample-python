@@ -30,7 +30,7 @@ pipeline {
             agent {
                 docker {
                     image 'six8/pyinstaller-alpine'
-                    args '-v $PWD:/src'
+                    args '--entrypoint='''
                 }
             }
             steps {
